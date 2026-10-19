@@ -16,7 +16,7 @@ const ForgotPassword = () => {
   const [regnoError, setRegnoError] = useState("");
   const [emailError, setEmailError] = useState("");
 
-  const isValidRegno = /^(23|24|25)[BM][A-Z]{2}\d{4}$/;
+  const isValidRegno = /^(23|24|25|26)[BM][A-Z]{2}\d{4}$/;
   const isValidEmail = /^[A-Za-z0-9._%+-]+@vitstudent\.ac\.in$/;
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
